@@ -11,7 +11,7 @@
       rgba(0, 0, 0, 0.5) 50%
     ),
     url(1.jpg);
-  background-position: center 35%; /* Ajuste la position de l'image de fond */
+  background-position: center 35%;
   background-size: cover;
   height: 100vh;
 }
