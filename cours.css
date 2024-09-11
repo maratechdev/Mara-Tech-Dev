@@ -1,0 +1,63 @@
+.course-list {
+  margin-top: 40px;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(img/1.jpg);
+  background-size: cover;
+  background-position: center 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* Pour que les blocs s'adaptent à l'écran */
+  justify-content: center; /* Aligne les blocs au centre horizontalement */
+  gap: 20px; /* Espacement entre les blocs */
+}
+
+.course-item {
+  background-color: #e67e22; /* Couleur de fond orange foncé */
+  color: #000; /* Couleur du texte en noir */
+  padding: 20px;
+  width: calc(
+    33.333% - 20px
+  ); /* Largeur des blocs pour trois colonnes avec espace */
+  max-width: 300px; /* Largeur maximale des blocs */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff; /* Couleur d'arrière-plan plus claire au survol */
+}
+
+.course-item h2 {
+  color: #000; /* Couleur du titre en noir */
+  margin-bottom: 10px;
+}
+
+.course-item p {
+  margin-bottom: 15px;
+  color: #000; /* Couleur du texte en noir */
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9; /* Couleur de fond bleu pour le bouton */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, text-decoration 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1f618d; /* Couleur bleue plus foncée au survol */
+}
