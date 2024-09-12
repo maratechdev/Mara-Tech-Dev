@@ -29,12 +29,13 @@
 }
 
 .logo {
-  color: #ff7200;
-  font-size: 35px;
-  font-family: Arial;
-  padding-left: 20px;
+  width: 150px; /*largeur*/
+  height: 65px; /*hauteur*/
+  background-image: url('img/Logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   float: left;
-  padding-top: 10px;
   margin-top: 5px;
 }
 
