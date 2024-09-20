@@ -20,33 +20,31 @@
   width: 1200px;
   height: 75px;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
   width: 200px;
-  float: left;
   height: 70px;
 }
 
 .logo {
-  width: 150px; /*largeur*/
-  height: 65px; /*hauteur*/
+  width: 150px;
+  height: 65px;
   background-image: url('img/Logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  float: left;
   margin-top: 5px;
 }
 
 .menu {
   width: 400px;
-  float: left;
-  height: 70px;
 }
 
 ul {
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,16 +53,15 @@ ul {
 ul li {
   list-style: none;
   margin-left: 62px;
-  margin-top: 27px;
   font-size: 14px;
+  transition: 0.4s ease-in-out;
 }
 
 ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-weight: bold;
-  transition: 0.4s ease-in-out;
 }
 
 ul li a:hover {
@@ -72,25 +69,27 @@ ul li a:hover {
 }
 
 .search {
-  width: 330px;
-  float: left;
-  margin-left: 270px;
+  display: flex;
+  align-items: center;
 }
 
 .srch {
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", Times, serif;
   width: 200px;
   height: 40px;
   background: transparent;
   border: 1px solid #ff7200;
-  margin-top: 13px;
   color: #fff;
-  border-right: none;
   font-size: 16px;
-  float: left;
-  padding: 10px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  padding: 10px;
+}
+
+.srch:focus {
+  outline: none;
+  border-color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .btn {
@@ -98,48 +97,42 @@ ul li a:hover {
   height: 40px;
   background: #ff7200;
   border: 2px solid #ff7200;
-  margin-top: 13px;
   color: #fff;
   font-size: 15px;
   border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  transition: 0.2s ease;
+  border-top-right-radius: 5px;
   cursor: pointer;
+  transition: 0.2s ease;
 }
+
 .btn:hover {
+  background-color: #fff;
   color: #000;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.srch:focus {
-  outline: none;
 }
 
 .content {
   width: 1200px;
-  height: auto;
   margin: auto;
   color: #fff;
   position: relative;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .content .par {
   padding-left: 20px;
   padding-bottom: 25px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   letter-spacing: 1.2px;
   line-height: 30px;
 }
 
 .content h1 {
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
   padding-left: 20px;
   margin-top: 9%;
   letter-spacing: 2px;
+  animation: slideInLeft 1.5s ease-in-out;
 }
 
 .content .cn {
@@ -153,6 +146,7 @@ ul li a:hover {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s ease;
+  animation: bounceIn 2s ease-in-out;
 }
 
 .content .cn a {
@@ -184,6 +178,7 @@ ul li a:hover {
   transform: translate(0%, -5%);
   border-radius: 10px;
   padding: 25px;
+  animation: zoomIn 1s ease-in-out;
 }
 
 .form h2 {
@@ -219,7 +214,7 @@ ul li a:hover {
 
 ::placeholder {
   color: #fff;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 .btnn {
@@ -234,34 +229,41 @@ ul li a:hover {
   color: #fff;
   transition: 0.4s ease;
 }
+
 .btnn:hover {
   background: #fff;
   color: #ff7200;
 }
+
 .btnn a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
 }
+
 .form .link {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   padding-top: 20px;
   text-align: center;
 }
+
 .form .link a {
   text-decoration: none;
   color: #ff7200;
 }
+
 .liw {
   padding-top: 15px;
   padding-bottom: 10px;
   text-align: center;
 }
+
 .icons a {
   text-decoration: none;
   color: #fff;
 }
+
 .icons ion-icon {
   color: #fff;
   font-size: 30px;
@@ -269,6 +271,84 @@ ul li a:hover {
   padding-top: 5px;
   transition: 0.3s ease;
 }
+
 .icons ion-icon:hover {
   color: #ff7200;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(img/1.jpg);
+  background-position: center 500%;
+  background-size: cover;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer:hover {
+  color: #ff7200;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  0% {
+    transform: scale(0.3);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.03);
+  }
+  80% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
