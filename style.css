@@ -5,12 +5,7 @@
 
 .main {
   width: 100%;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%
-    ),
-    url(img/1.jpg);
+  background: url(img/3.jpg);
   background-position: center 30%;
   background-size: cover;
   height: 100vh;
@@ -79,7 +74,7 @@ ul li a:hover {
   height: 40px;
   background: transparent;
   border: 1px solid #ff7200;
-  color: #fff;
+
   font-size: 16px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -174,7 +169,7 @@ ul li a:hover {
   );
   position: absolute;
   top: -20px;
-  left: 870px;
+  left: 900px;
   transform: translate(0%, -5%);
   border-radius: 10px;
   padding: 25px;
@@ -296,6 +291,8 @@ ul li a:hover {
 .footer:hover {
   color: #ff7200;
 }
+
+/* Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
