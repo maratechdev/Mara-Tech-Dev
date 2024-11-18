@@ -5,12 +5,8 @@
 
 .main {
   width: 100%;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%
-    ),
-    url(1.jpg);
+  background:
+    url(img/3.jpg);
   background-position: center 120%; /* Ajuste la position de l'image de fond */
   background-size: cover;
   min-height: 100vh;
@@ -78,13 +74,13 @@ ul li a:hover {
 }
 
 .srch {
-  font-family: "Times New Roman";
+  font-family: "Arial";
   width: 200px;
   height: 40px;
   background: transparent;
   border: 1px solid #ff7200;
   margin-top: 13px;
-  color: #fff;
+
   border-right: none;
   font-size: 16px;
   float: left;
